@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banque Innovante - Accueil</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Barre en haut -->
+  <div class="header">Banque Innovante</div>
+
+  <!-- Contenu principal -->
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/bank-background.jpg') }}" alt="Logo Banque">
+    </div>
+    
+    <h2>Bienvenue chez Banque Innovante</h2>
+    <p>Votre partenaire financier pour vos projets futurs.</p>
+    
+    <!-- Menu avec plusieurs boutons -->
+    <div class="button-container">
+      <a href="/loan" class="btn">Demande de prêt</a>
+      <a href="#" class="btn">Services bancaires</a>
+      <a href="#" class="btn">Investissements</a>
+      <a href="#" class="btn">Épargne</a>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <div class="footer">© 2024  Banque Innovante - Tous droits réservés</div>
+</body>
+</html>

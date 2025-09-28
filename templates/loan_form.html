@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banque Innovante - Demande de Prêt</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Barre en haut -->
+  <div class="header">Banque Innovante</div>
+
+  <!-- Contenu principal avec le formulaire -->
+  <div class="container">
+    <div class="logo-container">
+      <img src="{{ url_for('static', filename='images/bank-background.jpg') }}" alt="Logo">
+    </div>
+    
+    <h2>Formulaire de demande de prêt</h2>
+    <form action="/predict" method="post" class="form-container">
+      <label>Durée du prêt (en années) :</label>
+      <input type="number" name="loan_term" required>
+      
+      <label>Montant du prêt :</label>
+      <input type="number" name="loan_amount" required>
+      
+      <label>Score CIBIL :</label>
+      <input type="number" name="cibil_score" required>
+      
+      <label>Revenu annuel :</label>
+      <input type="number" name="income_annum" required>
+      
+      <label>Nombre de personnes à charge :</label>
+      <input type="number" name="no_of_dependents" required>
+      
+      <label>Niveau d'éducation :</label>
+      <input type="number" name="education" required>
+      
+      <label>Statut emploi (0 = non, 1 = oui) :</label>
+      <input type="number" name="self_employed" required>
+      
+      <label>Valeur des actifs résidentiels :</label>
+      <input type="number" name="residential_assets_value" required>
+      
+      <label>Valeur des actifs de luxe :</label>
+      <input type="number" name="luxury_assets_value" required>
+      
+      <label>Valeur des actifs commerciaux :</label>
+      <input type="number" name="commercial_assets_value" required>
+      
+      <label>Valeur des actifs bancaires :</label>
+      <input type="number" name="bank_asset_value" required>
+      
+      <button type="submit" class="submit-btn">Soumettre</button>
+    </form>
+  </div>
+
+  <!-- Pied de page -->
+  <div class="footer">© 2024 Banque Innovante - Tous droits réservés</div>
+</body>
+</html>

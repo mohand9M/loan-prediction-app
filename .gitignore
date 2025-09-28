@@ -1,0 +1,22 @@
+﻿# Environnements
+venv/
+.venv/
+env/
+myenv/
+.conda/
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Modèles / artefacts (retire ces lignes si tu veux les versionner)
+*.pkl
+*.joblib
+xgboost_model.json
+
+# Logs / systèmes / IDE
+*.log
+.DS_Store
+Thumbs.db
+.vscode/

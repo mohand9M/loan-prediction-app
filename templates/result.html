@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Résultat de la Demande</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="header">
+    Résultat de votre demande
+  </div>
+
+  <div class="container">
+    <div class="result">
+      <p>{{ result }}</p>
+      {% if result == "Approuvé" %}
+        <img src="{{ url_for('static', filename='images/happy-person.jpg') }}" alt="Personne Heureuse" class="result-image">
+      {% else %}
+        <img src="{{ url_for('static', filename='images/sad-person.jpg') }}" alt="Personne Malheureuse" class="result-image">
+      {% endif %}
+    </div>
+    <a href="/" style="color: #ff9900; text-decoration: none;">Retour au formulaire</a>
+  </div>
+</body>
+</html>
